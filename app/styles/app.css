@@ -11,6 +11,16 @@ html {
 #info {
 	color: white;
 	position: relative;
-	padding: 2% 4%;
+	padding: 2% 3%;
 	display: inline-block;
+}
+
+.separator {
+	border-right: 2px solid #b1b1b1;
+	border-radius: 5px;
+	height: auto;
+}
+
+h5 {
+	color: #ff8f00;
 }
