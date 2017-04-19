@@ -24,3 +24,11 @@ html {
 h5 {
 	color: #ff8f00;
 }
+
+.modal-trigger{
+	display: block;
+}
+
+.subWa {
+	font-size: 20px;
+}

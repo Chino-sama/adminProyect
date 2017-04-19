@@ -1,12 +1,9 @@
 <div class="row">
-	<header>
-		{{side-nav}}
-	</header>
-	<div id="info" class="col s10 offset-s2 cyan darken-3">
-	    <h4>
+	{{#head-info}}
+		<h4>
 	        Unidad 1. La Innovación en los procesos de administración contemporánea. 
 	    </h4>
-	</div>
+	{{/head-info}}
 	<div class="col s10 offset-s2">
 		<div class="col s6">
 		    <div class="card">
@@ -23,7 +20,7 @@
 		    			¿Qué es administración?<i class="material-icons right">close</i>
 		    		</span>
 			      <p>Administración es es el conjunto de actividades que permiten determinar y alcanzar objetivos de manera eficaz, eficiente y a tiempo.</p>
-			      <h6>Características de la administración</h6>
+			      <p class="subWa">Características de la administración</p>
 			      <p>◦	Universalidad <br>◦	Valor instrumental <br>◦ Unidad temporal <br>◦ Amplitud de ejercicio <br>◦ Especificidad <br>◦ Interdisciplinariedad <br>◦ Flexibilidad</p>
 			    </div>
 			</div>
@@ -41,16 +38,20 @@
 			      <div class="collapsible-header">Organización</div>
 			      <div class="collapsible-body">En esta etapa se da la administración de los recursos humanos, es decir, se establecen las funciones que cada quien debe desempeñar. En esta etapa es importante la coordinación y el trabajo en equipo. <br>
 			      <i>¿Cómo se va a hacer?</i> <a class="waves-effect waves-light btn right" href="#modal1">Enfoques</a>
-			      <div id="modal1" class="modal" style="z-index: 222;">
-				    <div class="modal-content">
-				      <h4>Enfoques</h4>
-				      <p>A bunch of text</p>
-				    </div>
-				    <div class="modal-footer">
-				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-				    </div>
-					</div>
-				  </div>
+			      {{#materialize-modal}}
+					    <div class="modal-content">
+						    <h5>Enfoques</h5>
+						   	<h6>Funcional</h6>	
+						    <p>A bunch of text</p>
+						    <h6>Por procesos</h6>	
+						    <p>A bunch of text</p>
+					    </div>
+					    <div class="modal-footer">
+					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+					    </div>
+					{{/materialize-modal}}	
+				  
+				</div>
 			    </li>
 			    <li>
 			      <div class="collapsible-header">Dirección</div>
@@ -79,7 +80,7 @@
 			    </div>
 			    <div class="card-stacked">
 			        <div class="card-content">
-			          <p>Habilidad técnica</p>
+			          <p class="subWa">Habilidad técnica</p>
 			          <p>Habilidades necesarias para "saber hacer".</p>
 			        </div>
 		    	</div>
@@ -92,7 +93,7 @@
 			    </div>
 			    <div class="card-stacked">
 			        <div class="card-content">
-			          <p>Habilidad de relaciones humanas</p>
+			          <p class="subWa">Habilidad de relaciones humanas</p>
 			          <p>Habilidades para trabajar con personas.</p>
 			        </div>
 		    	</div>
@@ -105,7 +106,7 @@
 			    </div>
 			    <div class="card-stacked">
 			        <div class="card-content">
-			          <p>Habilidad racional</p>
+			          <p class="subWa">Habilidad racional</p>
 			          <p>Habilidades para la toma de decisiones.</p>
 			        </div>
 		    	</div>
