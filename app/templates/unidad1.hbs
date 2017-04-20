@@ -27,7 +27,7 @@
 		</div>
 		<div class="col s6">
 			<h5>Funciones Administrativas</h5>
-			<ul class="collapsible" data-collapsible="accordion">
+			{{#materialize-collapsible}}
 			    <li>
 			    	<div class="collapsible-header">Planeación</div>
 			    	<div class="collapsible-body">En esta etapa se realiza un análisis del entorno, se establecen la misión y la visión, y se selecciona la estrategia que permite alcanzar los objetivos establecidos. <br>
@@ -37,26 +37,35 @@
 			    <li>
 			      <div class="collapsible-header">Organización</div>
 			      <div class="collapsible-body">En esta etapa se da la administración de los recursos humanos, es decir, se establecen las funciones que cada quien debe desempeñar. En esta etapa es importante la coordinación y el trabajo en equipo. <br>
-			      <i>¿Cómo se va a hacer?</i> <a class="waves-effect waves-light btn right" href="#modal1">Enfoques</a>
-			      {{#materialize-modal}}
+			      <i>¿Cómo se va a hacer?</i> <a class="waves-effect waves-light btn right" href="#enfoques">Enfoques</a>
+			      	{{#materialize-modal-fixed-footer id="enfoques"}}
 					    <div class="modal-content">
 						    <h5>Enfoques</h5>
-						   	<h6>Funcional</h6>	
-						    <p>A bunch of text</p>
-						    <h6>Por procesos</h6>	
-						    <p>A bunch of text</p>
+						   	<p class="subWa">Funcional</p>	
+						    <p>Se agrupan las actividades de acuerdo a la función que cumplen. <br> Ventajas: <br> ▪ Facilita supervisión <br> ▪ Promueve especialización <br> ▪ Fácil comprensión <br> ▪ Líneas de comunicación simple y claras <br> ▪	Simplifica la toma de decisiones <br> Desventajas: <br> ▪ Conflictos de interés entre áreas <br>▪ Coordinación más difícil <br> ▪ Se limita el desarrollo gerencial y la visión global de la empresa <br> ▪ El personal se identifica más con su departamento que con la empresa
+</p>
+						    <p class="subWa">Por procesos</p>	
+						    <p>Se agrupan las actividades de acuerdo a un proceso o tipo de equipo.</p>
 					    </div>
 					    <div class="modal-footer">
 					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
 					    </div>
-					{{/materialize-modal}}	
-				  
+					{{/materialize-modal-fixed-footer}}					  
 				</div>
 			    </li>
 			    <li>
 			      <div class="collapsible-header">Dirección</div>
 			      <div class="collapsible-body"><span>En esta etapa se da la toma de decisiones, así como la motivación y supervisión. En esta etapa es importante la comunicación efectiva, la cooperación y la participación. <br>
-			      <i>Ver que se haga.</i>
+			      <i>Ver que se haga.</i> <a class="waves-effect waves-light btn right" href="#lider-visible">Líder visible</a>
+			      	{{#materialize-modal id="lider-visible"}}
+					    <div class="modal-content">
+						    <h5>Características de un líder visible</h5>
+						   	<p>▪ Asume riesgos <br> ▪ El personal se identifica con él <br> ▪ Pone a las personas antes que los negocios <br> ▪ Conserva la calma <br> ▪	Sabe cuándo regresar a los negocios <br> ▪ Dice la verdad </p>
+					    </div>
+					    <div class="modal-footer">
+					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+					    </div>
+					{{/materialize-modal}}
 				  </span></div>
 			    </li>
 			    <li>
@@ -64,7 +73,7 @@
 			      <div class="collapsible-body"><span>En esta etapa se evalúa el desempeño de la empresa, se realiza una comparación de los objetivos establecidos en un principio con la situación actual. Para llevar a cabo esta etapa se da un proceso, que consta de cinco etapas: control, establecimiento de estándares, medición, corrección, y retroalimentación. <br>
 			      <i>¿Cómo se ha realizado?</i></span></div>
 			    </li>
-			</ul>
+			{{/materialize-collapsible}}
 		</div>
 	</div>
 </div>	
@@ -120,8 +129,8 @@
 		<hr>
 		<h5 class="center">Administradores</h5>
 		<div class="col s6">
-			<h5 class="center">Tipos de Administradores</h5>
-			<ul class="collapsible" data-collapsible="accordion">
+			<p class="subWa center">Tipos de Administradores</p>
+			{{#materialize-collapsible}}
 			    <li>
 			    	<div class="collapsible-header">Gerente de primera línea</div>
 			    	<div class="collapsible-body">Administrador responsable de la supervisión diaria de empleados que no son administradores.
@@ -136,11 +145,11 @@
 			      <div class="collapsible-body"><span> Administrador que fija las metas de la organización, decide cómo deben relacionarse los departamentos y vigila el desempeño de los gerentes medios.
 				  </span></div>
 			    </li>		    
-			</ul>
+			{{/materialize-collapsible}}
 		</div>
 		<div class="col s6">
-			<h5 class="center">Papeles del Administrador</h5>
-			<ul class="collapsible" data-collapsible="accordion">
+			<p class="subWa center">Papeles del Administrador</p>
+			{{#materialize-collapsible}}
 			    <li>
 			    	<div class="collapsible-header">De Decisión</div>
 			    	<div class="collapsible-body">Se relacionan con métodos que siguen los gerentes para planear estrategias y aprovechar los recursos. <br>
@@ -156,7 +165,8 @@
 			      	◦	Supervisor <br>
 			      	◦	Difusor <br>
 			      	◦	Vocero
-			      	</span></div>
+			      	</span>
+			      	</div>
 			    </li>
 			    <li>
 		      		<div class="collapsible-header">De Trato Personal</div>
@@ -164,9 +174,10 @@
 			      	◦	Figura Emblemática <br>
 			      	◦	Líder <br>
 			      	◦	Enlace
-				  	</span></div>
+				  	</span>
+				  	</div>
 			    </li>		    
-			</ul>
+			{{/materialize-collapsible}}
 		</div>
 	</div>
 </div>
