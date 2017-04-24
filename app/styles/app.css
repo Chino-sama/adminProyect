@@ -32,3 +32,33 @@ h5 {
 .subWa {
 	font-size: 20px;
 }
+
+.collapsible-header:hover {
+	background: #e1e1e1;
+}
+
+.card-image {
+	overflow: hidden;
+}
+
+.image-horizontal {
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+
+.fit {
+	object-fit: cover;
+}
+
+.wa {
+	height: 80vh;
+}
+
+.subWo {
+	color: #ff1744;
+}
+
+.listR {
+	list-style-type: upper-roman;
+}

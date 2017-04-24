@@ -4,28 +4,219 @@
 	        Unidad 3. La Administración e innovación en los modelos de negocio
 	    </h4>
 	{{/head-info}}
-	<div class="col s10 offset-s2">
-		<h4>Modelo de Negocios Orientado al Impacto Social</h4> <br>
-		<h5>Principios morales que rigen las decisiones en las empresas</h5>
-		<div class="col s8 offset-s2">
-			<div class="card">
-			    <div class="card-content">
-			      	<div id="tabES"><p>Normas que rigen el trato entre los miembros de una sociedad en lo que a equidad se refiere, justicia, pobreza  y los derechos del individuo.
-					</p></div>
-			      	<div id="tabEO"><p>Normas que rigen el comportamiento de los miembros de una profesión , comercio u oficio cuando realizan sus actividades laborales.
-					</p></div>
-			      	<div id="tabEI"><p>Normas y valores de las personas que determinan como ven sus responsabilidades ante los demás y como deben actuar en situaciones en las que están en juego sus propios intereses.</p></div>
-			      	<div id="tabEOrg"><p>Prácticas e ideas rectoras a través de las cuales una compañía y sus administradores contemplan su responsabilidad hacia sus grupos de interesados.</p></div>
-			    </div>
-			    <div class="card-tabs">
-			      	{{#materialize-tab-card}}
-			        	<li class="tab"><a href="#tabES">Ética Social</a></li>
-			        	<li class="tab"><a href="#tabEO">Ética Ocupacional</a></li>
-			        	<li class="tab"><a href="#tabEI">Ética Individual</a></li>
-			        	<li class="tab"><a href="#tabEOrg">Ética Organizacional</a></li>
-			      	{{/materialize-tab-card}}
-			    </div>
-		  	</div>
-		</div>
-	</div>
 </div>	
+<div class="row">
+	<div class="col s8 offset-s2">
+		{{#materialize-scrollSpy id="impacto"}}
+			<h4 class="subWo">Modelo de Negocios Orientado al Impacto Social</h4>
+			<h5>Principios morales que rigen las decisiones en las empresas</h5>
+			<div class="col s10 offset-s1">
+				<div class="card">
+			    	<div class="card-content">
+			      		<div id="tabES">
+			      			<p>Normas que rigen el trato entre los miembros de una sociedad en lo que a equidad se refiere, justicia, pobreza  y los derechos del individuo.</p>
+			      		</div>
+			      	<div id="tabEO">
+			      		<p>Normas que rigen el comportamiento de los miembros de una profesión , comercio u oficio cuando realizan sus actividades laborales.</p>
+			      	</div>
+			      	<div id="tabEI">
+			      		<p>Normas y valores de las personas que determinan como ven sus responsabilidades ante los demás y como deben actuar en situaciones en las que están en juego sus propios intereses.</p>
+			      	</div>
+			      	<div id="tabEOrg">
+			      		<p>Prácticas e ideas rectoras a través de las cuales una compañía y sus administradores contemplan su responsabilidad hacia sus grupos de interesados.</p>
+			      	</div>
+				    </div>
+				    <div class="card-tabs blue darken-3">
+				      	{{#materialize-tab-card}}
+				        	<li class="tab"><a href="#tabES">Ética Social</a></li>
+				        	<li class="tab"><a href="#tabEO">Ética Ocupacional</a></li>
+				        	<li class="tab"><a href="#tabEI">Ética Individual</a></li>
+				        	<li class="tab"><a href="#tabEOrg">Ética Organizacional</a></li>
+				      	{{/materialize-tab-card}}
+				    </div>
+			  	</div>
+			</div>
+			<div class="col s12">
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h5>Filosofías para la toma de decisiones en las empresas</h5>
+					{{#materialize-collapsible}}
+						<li>
+					    	<div class="collapsible-header">Enfoque Utilitario</div>
+					    	<div class="collapsible-body"><span>Una decisión ética es la que prodyce el mayor bien para el mayor número de personas.</span></div>
+					    </li>
+					    <li>
+					    	<div class="collapsible-header">Enfoque del Individualismo</div>
+					    	<div class="collapsible-body"><span>Una decisión ética es la que promueve los mejores intereses del individuo a largo plazo.</span></div>
+					    </li>
+					    <li>
+					    	<div class="collapsible-header">Enfoque de los Derechos Morales</div>
+					    	<div class="collapsible-body"><span>Una decisión ética sostiene y defiende los derechos fundamentales y privilegios de los afectados.</span></div>
+					    </li>
+					    <li>
+					    	<div class="collapsible-header">Enfoque de la Justicia</div>
+					    	<div class="collapsible-body"><span>Una decisión ética distribuye los beneficios y perjuicios entre personas y grupos de manera justa, equitativa o imparcial.</span></div>
+					    </li>
+					{{/materialize-collapsible}} 
+				</div>
+				<div class="col s6">
+					<h5>La relación entre la ética y las leyes</h5>
+					{{#materialize-carousel}}
+					    <div class="carousel-item light-green darken-2 white-text" href="#one!">
+					      <h2>Ética</h2>
+					      <p class="white-text">◦ Son reglas de conducta <br> ◦ Proviene de la conciencia <br> ◦ Es un código moral <br> ◦ No hay castigo si no se cumple</p>
+					    </div>
+					    <div class="carousel-item lime darken-2 white-text" href="#two!">
+					      <h2>Leyes</h2>
+					      <p class="white-text">◦ Son reglas establecidas por el gobierno <br> ◦ Se aplican por el gobierno <br> ◦ Regulan la convivencia dentro de una sociedad <br> ◦ Hay castigo si no se cumplen </p>
+					    </div>
+			  		{{/materialize-carousel}}
+				</div>
+				<div class="col s12">
+					<hr>
+				</div>
+				<div class="col s6">
+					<h5>El administrador y su apego a principios morales</h5>
+					<table>
+				    	<thead>
+				        	<tr>
+				        		<th>Tipo de administrador</th>
+				            	<th>Características</th>
+				        	</tr>
+				        </thead>
+				        <tbody>
+				        	<tr>
+				        		<td>N1 (Preconvencional)</td>
+				            	<td>◦ Sigue reglas para evitar castigo <br> ◦ Tipo de liderazgo: autocrítico <br> ◦ Cumple tareas</td>
+				        	</tr>
+				        	<tr>
+				        		<td>N2 (Convencional)</td>
+				            	<td>◦ Está a la altura de las expectativas <br> ◦ Tipo de liderazgo: orientado al equipo y colaboración</td>
+				        	</tr>
+				        	<tr>
+				            	<td>N3 (Posconvencional)</td>
+				            	<td>◦ Va más allá <br> ◦ Tipo de liderazgo: servidor <br> ◦ Empleados con empowerment</td>
+				        	</tr>
+				    	</tbody>
+				    </table>
+				</div>
+				<div class="col s6">
+					<div class="card  cyan darken-3 hoverable">
+            			<div class="card-content white-text">
+              				<span class="card-title">Responsabilidad social</span>
+              				<p>Obligación de la empresa de tomar decisiones o emprender acciones que mejoren a la sociedad y a la organización.</p>
+           				</div>
+          			</div>
+				</div>
+				<div class="col s6">
+					<div class="card red accent-3 hoverable">
+            			<div class="card-content white-text">
+              				<span class="card-title">Grupo de interés</span>
+              				<p>Personas y grupos que proveen a una compañía sus recursos productivos y que en consecuencia tienen un derecho y un interés en la compañía.</p>
+           				</div>
+          			</div>
+				</div>
+				<div class="col s12">
+					<hr>
+				</div>
+				<div class="col s6">
+					{{#materialize-boxed src="http://res.cloudinary.com/dwm4vv7pj/image/upload/v1493053957/wo2_zi5azb.png"}}
+					{{/materialize-boxed}}
+				</div>
+				<div class="col s6">
+					<h5>Criterios de Desempeño Social</h5>
+					<div class="row">
+						<div class="col s6">
+							<div class="card lime darken-2 hoverable">
+	            				<div class="card-content white-text">
+	              					<span class="card-title">Responsabilidad Económica</span>
+	              					<p>Ser rentable</p>
+	           					</div>
+	          				</div>
+						</div>
+						<div class="col s6">
+							<div class="card lime darken-2 hoverable">
+	            				<div class="card-content white-text">
+	              					<span class="card-title">Responsabilidad Legal</span>
+	              					<p>Acatar la ley</p>
+	           					</div>
+	          				</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<div class="card lime darken-2 hoverable">
+	            				<div class="card-content white-text">
+	              					<span class="card-title">Responsabilidad Ética</span>
+	              					<p>Ser ético</p>
+	           					</div>
+	          				</div>
+						</div>
+						<div class="col s6">
+							<div class="card lime darken-2 hoverable">
+	            				<div class="card-content white-text">
+	              					<span class="card-title">Responsabilidad Discrecional</span>
+	              					<p>Ayudar a la comunidad</p>
+	           					</div>
+	          				</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{/materialize-scrollSpy}}
+		{{#materialize-scrollSpy id="diversidad"}}
+			<h4 class="subWo">Modelo de Negocios Orientado al Desarrollo de un Ambiente Multicultural</h4>
+			<div class="row">
+				<div class="col s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://www.monografias.com/trabajos97/sobre-la-administracion-de-empresas/image006.jpg">
+					    </div>
+					    <div class="card-content">
+					      	<span class="card-title activator grey-text text-darken-4">
+				    			¿Qué es diversidad?<i class="material-icons right">more_vert</i>
+				    		</span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="card-title grey-text text-darken-4">
+				    			¿Qué es diversidad?<i class="material-icons right">close</i>
+				    		</span>
+					      <p>Diferencias entre las personas por cualquier característica con que se distinga a las personas: <br>
+					      	◦ Edad <br>
+					      	◦ Género <br>
+					      	◦ Raza <br>
+					      	◦ Etnia <br>
+					      	◦ Religión <br>
+					      	◦ Preferencias sexuales <br>
+					      	◦ Origen socioeconómico <br>
+					      	◦ Capacidades o discapacidades <br>
+					      	◦ Escolaridad <br>
+					      	◦ Experiencia <br>
+					      	◦ Aspecto <br>
+					      </p>
+					    </div>
+					</div>
+				</div>
+				<div class="col s6">
+					
+				</div>
+			</div>	
+		{{/materialize-scrollSpy}}
+		{{#materialize-scrollSpy id="global"}}
+			<h4 class="subWo">Modelo de Negocios Orientado al Desarrollo de un Ambiente Globalizado</h4>
+		{{/materialize-scrollSpy}}
+		{{#materialize-scrollSpy id="proceso"}}
+			<h4 class="subWo">Modelo de Negocios Orientado a la Generación de Procesos</h4>
+		{{/materialize-scrollSpy}}	
+	</div>
+	<div class="col s2 wa valign-wrapper">
+		<ul class="section table-of-contents fixed">
+			<li><a href="#impacto">Impacto Social</a></li>
+			<li><a href="#diversidad">Ambiente Multicultural</a></li>
+			<li><a href="#global">Ambiente Globalizado</a></li>
+			<li><a href="#proceso">Generación de Procesos</a></li>
+		</ul>
+	</div>
+</div>

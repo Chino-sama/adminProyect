@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('unidad2');
   this.route('unidad3');
   this.route('unidad4');
+  this.route('reflexion');
 });
 
 export default Router;
