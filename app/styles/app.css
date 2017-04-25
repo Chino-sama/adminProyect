@@ -62,3 +62,7 @@ h5 {
 .listR {
 	list-style-type: upper-roman;
 }
+
+.border {
+	border-bottom: 1px solid #d0d0d0;
+}
