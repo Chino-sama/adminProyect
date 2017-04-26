@@ -1,0 +1,40 @@
+<div class="hide-on-large-only side-btn center">
+	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" style="color: white; font-size: 55px;">menu</i></a>
+</div>
+<div id="slide-out" class="side-nav">
+	<ul>
+		{{input type="text" placeholder="Buscar"}}
+		<li>
+		  {{#link-to 'home' class="waves-effect waves-green"}}
+		      HOME
+		  {{/link-to}}
+		</li>
+		<li>
+		  {{#link-to 'unidad1' class="waves-effect waves-green"}}
+		      Unidad 1
+		  {{/link-to}}
+		</li>
+		<li>
+		  {{#link-to 'unidad2' class="waves-effect waves-green"}}
+		      Unidad 2
+		  {{/link-to}}
+		</li>
+		<li>
+		  {{#link-to 'unidad3' class="waves-effect waves-green"}}
+		      Unidad 3
+		  {{/link-to}}
+		</li>
+		<li>
+		  {{#link-to 'unidad4' class="waves-effect waves-green"}}
+		      Unidad 4
+		  {{/link-to}}
+		</li>
+		<li>
+		  {{#link-to 'reflexion' class="waves-effect waves-green"}}
+		      Reflexión
+		  {{/link-to}}
+		</li>
+	</ul>
+</div>
+
+{{yield}}

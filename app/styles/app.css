@@ -66,3 +66,9 @@ h5 {
 .border {
 	border-bottom: 1px solid #d0d0d0;
 }
+
+.side-btn {
+	font-size: 40px;
+	z-index: 1000000;
+	padding-top: 50%;
+}
